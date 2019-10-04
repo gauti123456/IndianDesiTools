@@ -1,0 +1,53 @@
+<% include ../partials/head %>
+<!-- Nav bar of the Website-->
+
+<% include ../partials/navbar %>
+
+<!-- Starting of the Body section of the home page-->
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="jumbotron">
+          <h1>Download Screenshot of Video</h1>
+          <p>Online Service For Taking Screesnhot of Video</p>
+        </div>
+        <br /><br />
+
+        <form
+          method="POST"
+          action="/takescreenshot"
+          class="form-horizontal"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label class="btn btn-primary">
+              Browse for file ...
+              <input
+                class="form-control"
+                name="takescreenshot"
+                type="file"
+                required
+              />
+            </label>
+            <br />
+            <label>
+              Seconds
+              <input
+                class="form-control"
+                name="second"
+                type="number"
+                required
+              />
+            </label>
+          </div>
+          <input type="submit" class="btn btn-primary" value="Download Screenshot"/>
+        </form>
+        <br />
+      </div>
+      <br /><br />
+      <% include ../partials/sidebar %> <% include ../partials/footer %>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,43 @@
+<% include ../partials/head %>
+<!-- Nav bar of the Website-->
+
+<% include ../partials/navbar %>
+
+<!-- Starting of the Body section of the home page-->
+
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="jumbotron">
+        <h1>Merge Multiple Videos</h1>
+        <p>Online Service For Merging Multiple Videos</p>
+      </div>
+      <br /><br />
+
+      <form
+        method="POST"
+        action="/mergevideos"
+        class="form-horizontal"
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <label class="btn btn-primary">
+            First Video File
+            <input class="form-control" name="firstvideo" type="file" required />
+          </label>
+          <label class="btn btn-primary">
+            Second Video File
+            <input class="form-control" name="secondvideo" type="file" required />
+          </label>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Merge Videos" />
+      </form>
+      <br />
+    </div>
+    <br /><br />
+  <% include ../partials/sidebar %>
+
+  <% include ../partials/footer %>
+</div>

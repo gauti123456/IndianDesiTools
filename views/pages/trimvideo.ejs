@@ -1,0 +1,57 @@
+<% include ../partials/head %>
+<!-- Nav bar of the Website-->
+
+<% include ../partials/navbar %>
+
+<!-- Starting of the Body section of the home page-->
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="jumbotron">
+          <h1>Trim Section of Video</h1>
+          <p>Online Service For Trimming a Section of Video</p>
+        </div>
+        <br /><br />
+
+        <form
+          method="POST"
+          action="/trimvideo"
+          class="form-horizontal"
+          enctype="multipart/form-data"
+        >
+          <div class="form-group">
+            <label class="btn btn-primary">
+              Browse for file ...
+              <input
+                class="form-control"
+                name="trimvideo"
+                type="file"
+                required
+              />
+            </label>
+            <br>
+            <label>
+              Start Time
+              <input class="form-control" name="start" type="time" required />
+            </label>
+            <label>
+              Duration
+              <input
+                class="form-control"
+                name="duration"
+                type="number"
+                required
+              />
+            </label>
+          </div>
+          <input type="submit" class="btn btn-primary" value="Trim Video" />
+        </form>
+        <br />
+      </div>
+      <br /><br />
+      <% include ../partials/sidebar %> <% include ../partials/footer %>
+    </div>
+  </div>
+</body>

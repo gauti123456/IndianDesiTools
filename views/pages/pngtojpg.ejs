@@ -1,0 +1,39 @@
+<% include ../partials/head %>
+<!-- Nav bar of the Website-->
+
+<% include ../partials/navbar %>
+
+<!-- Starting of the Body section of the home page-->
+
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="jumbotron">
+        <h1>Convert PNG to JPG</h1>
+        <p>Online Service For Converting PNG to JPG</p>
+      </div>
+      <br /><br />
+
+      <form
+        method="POST"
+        action="/pngtojpg"
+        class="form-horizontal"
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <label class="btn btn-primary">
+            Browse for file ...
+            <input class="form-control" name="pngtojpg" type="file" required />
+          </label>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Convert" />
+      </form>
+      <br />
+    </div>
+    <br /><br />
+  <% include ../partials/sidebar %>
+
+  <% include ../partials/footer %>
+</div>
