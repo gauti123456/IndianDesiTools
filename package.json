@@ -19,7 +19,7 @@
     "easy-pdf-merge": "^0.2.2",
     "ejs": "^2.7.1",
     "express": "^4.17.1",
-    "express-fileupload": "^1.1.6-alpha.4",
+    "express-fileupload": "^1.1.9",
     "fluent-ffmpeg": "^2.1.2",
     "imagemin": "^7.0.0",
     "imagemin-jpegtran": "^6.0.0",
