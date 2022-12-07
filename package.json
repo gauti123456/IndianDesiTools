@@ -14,11 +14,11 @@
   },
   "dependencies": {
     "base64-to-image": "^1.0.2",
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "compress-images": "^1.5.8",
     "easy-pdf-merge": "^0.2.2",
     "ejs": "^2.7.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-fileupload": "^1.1.6-alpha.4",
     "fluent-ffmpeg": "^2.1.2",
     "imagemin": "^7.0.0",
